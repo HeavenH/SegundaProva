@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.AlteraFragment" app:layout_constraintBottom_toBottomOf="@+id/updatePib"
+            app:layout_constraintTop_toBottomOf="@+id/updatePib">
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/updateName"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="111dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/updateDescription"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/updateName"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/updatePopulation"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="23dp" app:layout_constraintTop_toBottomOf="@+id/updateDescription"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/updatePib"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/updatePopulation"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/updateSize"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/updatePib"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/updateCapital"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="100dp" app:layout_constraintTop_toBottomOf="@+id/updatePib"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"/>
+        <Button
+                android:text="Update"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" android:id="@+id/button2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="164dp" app:layout_constraintTop_toBottomOf="@+id/updatePib"
+                android:layout_marginStart="84dp"
+                android:background="#3326DD"
+                android:textColor="#FFFFFF"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

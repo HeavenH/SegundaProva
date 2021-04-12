@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".fragments.CadastraFragment">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cityPopulation"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/cityPib"
+                android:hint="população"
+        />
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/citySize"
+                android:hint="tamanho"
+                app:layout_constraintStart_toStartOf="@+id/cityCapital"
+                android:layout_marginStart="3dp" android:layout_marginBottom="47dp"
+                app:layout_constraintBottom_toTopOf="@+id/cityCapital"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cityCapital"
+                android:hint="capital"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="264dp"
+                android:layout_marginStart="8dp"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:hint="pib"
+                android:id="@+id/cityPib"
+                app:layout_constraintStart_toStartOf="@+id/cityCapital"
+                android:layout_marginTop="43dp" app:layout_constraintTop_toBottomOf="@+id/cityCapital"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cityDescription"
+                android:layout_marginTop="26dp"
+                android:hint="descrição"
+                app:layout_constraintTop_toBottomOf="@+id/cityName" android:layout_marginEnd="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/cityName"/>
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/cityName"
+                android:hint="nome"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="11dp"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        <Button
+                android:text="Cadastrar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" android:id="@+id/btnCadastra"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="48dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.497"
+                android:background="#3326DD"
+                android:textColor="#FFFFFF"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
